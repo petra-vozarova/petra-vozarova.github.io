@@ -9,6 +9,7 @@ body{
     padding:0;
     text-align: center;
     position: relative;
+    font-family: 'Open Sans'
 }
 
 #navbar{
@@ -109,10 +110,11 @@ svg{
 .projectGrid{
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
-    max-width:80%;
-    width:75%; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 440px));
+    width:80%; 
     height: auto;
+    justify-content: center;
+    margin-bottom: 12em;
 }
 
 .project-tile{
@@ -121,7 +123,7 @@ svg{
     padding:0.3em;
     position: relative;
     border-radius: 4%;
-    height: 6.5em;
+    height: 8em;
 }
 
 .projectImage{
@@ -208,13 +210,28 @@ svg{
     line-height: 1.5em;
 }
 
-
 .fa{
     color: var(--navbarColor)
 }
 
 .fa:hover{
     color: #333;
+}
+
+.fa-file{
+    position: relative;
+}
+
+.fa-file::after{
+  content: 'CV';
+  position: absolute;
+  top: 0.6em;
+  left:0.1em;
+  right:0;
+  bottom:0;
+  width:80%;
+  color: var(--mainColor);
+  font-size: 0.55em;
 }
 
 footer{
@@ -224,6 +241,52 @@ footer{
     font-size: 1.5em;
     padding:0.1em;
     bottom: 0;
+}
+
+@media screen and (min-width: 1250px){
+    .text-block{
+        right: 10em;
+    }
+    #aboutMe{
+        width:55%;
+    }
+    .technologiesGird{
+        width:60%;
+    }
+    #contactMe h2{
+        font-size: 2em;
+    }
+    .fa{
+        font-size: 5em;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .text-block{
+        right: 0.2em;
+        max-width:60%; 
+    }
+    #aboutMe{
+        width:85%;
+    }
+    .projectGrid{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 550px){
+    #navbar a{
+        margin: 0.2em;
+        font-size:1.5em;
+    }
+    .text-block{
+        right: 0.2em;
+        max-width:60%; 
+        bottom: 250px;
+        font-size: 1em;
+    }
+    #contactMe{
+        width:100%;
+    }
 }
 
 
