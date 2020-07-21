@@ -1,0 +1,223 @@
+
+body{
+    --mainColor: rgba(193, 128, 67, 0.5);
+    --navbarColor: rgba(235, 234, 235);
+    background-color: var(--mainColor);
+    width: 100%;
+    height: auto;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+#navbar{
+    background-color: var(--navbarColor);
+    position: fixed;
+    z-index:10;
+    top: 0;
+    text-align: right;
+    right: 0;
+    width:100%;
+}
+
+a{
+    text-decoration: none;
+    margin: 0.5em;
+    font-size:1.8em;
+    color: black;
+}
+.picture{
+    position: relative;
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.text-block{
+    position: absolute;
+    bottom: 400px;
+    right: 1.5em;
+}
+
+h1{
+    color: rgba(203, 128, 67, 1);
+    font-size: 3.1em;
+}
+
+.picture h2{
+    font-size: 2em;
+    margin:0.2em;
+    padding: 0.2em;
+}
+
+.mainText{
+    position: absolute;
+    margin: 5em auto 5em auto;
+    font-size: 1.2em;
+    height: auto;
+}
+#aboutMe{
+    text-align: justify;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    width: 60%;
+    margin: auto;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+#aboutMe h2{
+    text-align: center;
+}
+svg{
+    fill: var(--mainColor);
+
+}
+
+.projects{
+    width: 100%;
+    background-color:white;
+    margin: 5em auto 5em auto;
+    padding-bottom: 5em;
+    height: auto;
+    text-align: start;
+    position: relative;
+}
+.projects h2, .project-tile{
+    text-align: center;
+}
+.projects::before{
+    content: '';
+    position: absolute;
+    z-index:100;
+    background-color:var(--mainColor);
+    width:100%;
+    height:100%;
+   clip-path: polygon(100% 90%, 0 100%, 100% 100%);
+}
+
+#myWork h2{
+    font-size: 2em;
+}
+
+.projectGrid{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    max-width:80%;
+    width:75%; 
+    height: auto;
+}
+
+.project-tile{
+    background-color: rgb(194, 194, 194, 0.7);
+    opacity: 1;
+    padding:0.3em;
+    position: relative;
+    border-radius: 4%;
+    height: 6.5em;
+}
+
+.projectImage{
+    object-fit: cover;
+    width:100%;
+    padding-right: 0.5em;
+    height: auto;
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    border-radius:4%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:auto;
+    width:100%;
+    opacity:0;
+    transition: .5s ease;
+    background-color: rgb(193, 128, 67);
+    display: inline-block;
+    text-align:start;
+}
+
+.project-tile:hover .overlay{
+    opacity: 0.95;
+}
+
+.project-title{
+    font-size: 0.8em;
+    padding:0.3em 0 0 0;
+    margin:0;
+}
+
+.hiddenText{
+    font-size: 0.7em;
+    line-height: 1.5em;
+}
+
+.technologies{
+    font-size: 1.4em;
+    margin-top: 4em;
+}
+.technologies h2{
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+.technologiesGird{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+    width:75%;
+}
+
+.techImage{
+    padding:0.3em;
+    position: relative;
+    border-radius: 4%;
+    height: 6.5em;
+}
+
+.techImage img{
+    width:100%;
+    object-fit: cover;
+    display: block;
+    height: 85%;
+    padding: 0.3em;
+}
+
+#contactMe{
+    padding-top: 8em;
+    position: relative;
+    width:85%;
+    margin: 0 auto;
+}
+
+#contactMe h2{
+    font-size: 1.8em;
+    padding-bottom: 1.8em;
+    line-height: 1.5em;
+}
+
+
+.fa{
+    color: var(--navbarColor)
+}
+
+.fa:hover{
+    color: #333;
+}
+
+footer{
+    position: relative;
+}
+
+
+
+
