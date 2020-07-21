@@ -119,6 +119,7 @@ svg{
 }
 
 .projectGrid{
+    position: relative;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 440px));
@@ -198,12 +199,14 @@ li{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
     width:80%;
+    justify-content: center;
 }
 
 .techImage{
     padding:0.3em;
     border-radius: 4%;
     height: 6.5em;
+    text-align: center;
 }
 
 .techImage img{
@@ -262,7 +265,7 @@ footer{
     font-weight: 600;
 }
  
-@media screen and (min-width: 1250px){
+@media screen and (min-width: 1300px){
     .text-block{
         right: 10em;
     }
@@ -280,7 +283,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 1250px){
     .text-block{
         right: 0.2em;
         max-width:60%; 
@@ -293,6 +296,9 @@ footer{
     #navbar a{
         margin: 0.2em;
         font-size:1.5em;
+    }
+    #aboutMe h2{
+        line-height: 1.5em;
     }
     .text-block{
         right: 0.2em;
