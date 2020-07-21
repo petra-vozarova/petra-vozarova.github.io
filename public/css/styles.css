@@ -28,6 +28,12 @@ a{
     font-size:1.8em;
     color: black;
 }
+
+a:hover{
+    color: rgba(203, 128, 67, 1);
+    font-weight: 600;
+    transition: .2s ease;
+}
 .picture{
     position: relative;
     width: 100%;
@@ -53,7 +59,7 @@ h1{
 }
 
 .picture h2{
-    font-size: 2em;
+    font-size: 2.2em;
     margin:0.2em;
     padding: 0.2em;
 }
@@ -65,15 +71,20 @@ h1{
 }
 #aboutMe{
     text-align: justify;
-    font-size: 1.4em;
-    line-height: 1.5em;
+    font-size: 1.5em;
+    line-height: 1.3em;
     width: 60%;
     margin: auto;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 #aboutMe h2{
     text-align: center;
+    padding-bottom: 2em;
+}
+#aboutMe p{
+    padding-top: 0;
+    margin-top: 0;
 }
 svg{
     fill: var(--mainColor);
@@ -84,7 +95,7 @@ svg{
     width: 100%;
     background-color:white;
     margin: 5em auto 5em auto;
-    padding-bottom: 5em;
+    padding-bottom: 3em;
     height: auto;
     text-align: start;
     position: relative;
@@ -146,8 +157,6 @@ svg{
     opacity:0;
     transition: .5s ease;
     background-color: rgb(193, 128, 67);
-    display: inline-block;
-    text-align:start;
 }
 
 .project-tile:hover .overlay{
@@ -161,10 +170,18 @@ svg{
 }
 
 .hiddenText{
+    text-align: start;
+    top: 30%;
+    margin-top: -30px;
+    position: absolute;
     font-size: 0.7em;
     line-height: 1.5em;
+    color: black;
+    font-weight: 500;
 }
-
+li{
+    margin-left:0.8em;
+}
 .technologies{
     font-size: 1.4em;
     margin-top: 4em;
@@ -216,6 +233,7 @@ svg{
 
 .fa:hover{
     color: #333;
+    transition: 0.5s ease;
 }
 
 .fa-file{
@@ -238,11 +256,12 @@ footer{
     background-color:var(--navbarColor);
     width: 100%;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1.8em;
     padding:0.1em;
     bottom: 0;
+    font-weight: 600;
 }
-
+ 
 @media screen and (min-width: 1250px){
     .text-block{
         right: 10em;
@@ -269,9 +288,6 @@ footer{
     #aboutMe{
         width:85%;
     }
-    .projectGrid{
-        width: 95%;
-    }
 }
 @media screen and (max-width: 550px){
     #navbar a{
@@ -283,6 +299,9 @@ footer{
         max-width:60%; 
         bottom: 250px;
         font-size: 1em;
+    }
+    .projectGrid{
+        width: 100%;
     }
     #contactMe{
         width:100%;
