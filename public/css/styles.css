@@ -1,7 +1,9 @@
 
 body{
-    --mainColor: rgba(193, 128, 67, 0.5);
+    --mainColor1: rgba(193, 128, 67, 0.5);
+    --mainColor: rgba(72,117,73, 0.9);
     --navbarColor: rgb(235, 234, 235);
+    --titles: rgba(193, 128, 67, 1);
     background-color: var(--mainColor);
     width: 100%;
     height: 100%;
@@ -30,7 +32,7 @@ a{
 }
 
 a:hover{
-    color: rgba(203, 128, 67, 1);
+    color: rgba(72,117,73, 1);
     font-weight: 600;
     transition: .2s ease;
 }
@@ -54,7 +56,9 @@ img {
 }
 
 h1{
-    color: rgba(203, 128, 67, 1);
+    color: #db8400;
+    /* color: #be7302;
+    color:var(--mainColor)*/
     font-size: 3.1em;
 }
 
@@ -107,8 +111,8 @@ svg{
     content: '';
     position: absolute;
     z-index:100;
-    background-color:rgb(193, 128, 67);
-    opacity: 0.5;
+    background-color:rgba(72,117,73);
+    opacity: 0.9;
     width:100%;
     height:100%;
    clip-path: polygon(100% 90%, 0 100%, 100% 100%);
@@ -157,7 +161,7 @@ svg{
     width:100%;
     opacity:0;
     transition: .5s ease;
-    background-color: rgb(193, 128, 67);
+    background-color: rgb(72,117,73);
 }
 
 .project-tile:hover .overlay{
@@ -210,11 +214,13 @@ li{
 }
 
 .techImage img{
+    border-radius: 10%;
     width:100%;
     object-fit: cover;
     display: block;
     height: 85%;
     padding: 0.3em;
+    background-color: transparent;
 }
 
 #contactMe{
