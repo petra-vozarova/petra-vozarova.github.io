@@ -14,6 +14,14 @@ body{
     font-family: 'Open Sans'
 }
 
+h1, h2{
+    font-family: 'Amatic SC';
+}
+
+h2{
+    font-size: 2.2em;
+}
+
 #navbar{
     background-color: var(--navbarColor);
     position: fixed;
@@ -22,12 +30,14 @@ body{
     text-align: right;
     right: 0;
     width:100%;
+    font-family: 'Amatic SC';
+    font-weight: 600;
 }
 
- #navbar a{
+ a{
     text-decoration: none;
-    margin: 0.5em;
-    font-size:1.8em;
+    margin-left: 0.8em;
+    font-size:2em;
     color: black;
 }
 
@@ -39,7 +49,6 @@ body{
 .picture{
     position: relative;
     width: 100%;
-    margin-top: 0.5em;
 }
 
 img {
@@ -47,6 +56,7 @@ img {
     height: 100vh;
     object-fit: cover;
     object-position: top center;
+    margin-top: 0.5em;
 }
 
 .text-block{
@@ -59,11 +69,11 @@ h1{
     color: #db8400;
     /* color: #be7302;
     color:var(--mainColor)*/
-    font-size: 3.1em;
+    font-size: 4.1em;
 }
 
 .picture h2{
-    font-size: 2.2em;
+    font-size: 3.2em;
     margin:0.2em;
     padding: 0.2em;
 }
@@ -81,6 +91,7 @@ h1{
     margin: auto;
     padding-top: 3em;
     padding-bottom: 3em;
+    color:#eee;
 }
 #aboutMe h2{
     text-align: center;
@@ -107,6 +118,11 @@ svg{
 .projects h2, .project-tile{
     text-align: center;
 }
+
+.projects h2{
+    font-size: 5em;
+}
+
 .projects::before{
     content: '';
     position: absolute;
@@ -164,6 +180,8 @@ svg{
     opacity:0;
     transition: .5s ease;
     background-color: rgb(72,117,73);
+    display: flex;
+    flex-direction: column;
 }
 
 .project-tile:hover .overlay{
@@ -177,25 +195,26 @@ svg{
 }
 
 .hiddenText{
-    text-align: start;
-    top: 25%;
-    margin-top: -70px;
-    position: relative;
-    font-size: 0.9em;
+    height:100%;
+}
+.hiddenText ul{
+    font-size: auto;
     line-height: 1.5em;
     color: black;
     font-weight: 500;
+    margin: 5% auto auto auto;
+    height:70%;
+    align-items: flex-start;
 }
 
 .hiddenText a{
     width: 40%;
-    height:20%;
-    position: relative;
+    height:10%;
     font-weight: 700;
     color: #db8400;
     text-align: center;
-    margin: 0.5em;
-    font-size:1.8em;
+    text-decoration: underline;
+    align-items: flex-end;
 }
 
 #aCode{
@@ -208,7 +227,8 @@ svg{
 
 li{
     font-size: 1.3em;
-    margin-left:0.8em;
+    list-style-type: none;
+    padding-top: 0.1em;
 }
 .technologies{
     font-size: 1.4em;
@@ -218,7 +238,7 @@ li{
     text-align: center;
 }
 .technologies h2{
-    font-size: 2em;
+    font-size: 2.5em;
     padding-bottom: 1em;
 }
 .technologiesGird{
@@ -251,22 +271,24 @@ li{
     padding-bottom: 10em;
     width:85%;
     margin: auto;
+    color: #eee;
 }
 
-a{
+/* a{
     text-decoration: none;
     margin: 0.5em;
     font-size:1.8em;
     color: black;
-}
+} */
 
 #contactMe h2{
-    font-size: 1.8em;
-    padding-bottom: 1.8em;
+    font-size: 2.8em;
+    padding-top: 1.5em;
     line-height: 1.5em;
 }
 
 .fa{
+    margin-top: 0;
     color: var(--navbarColor)
 }
 
