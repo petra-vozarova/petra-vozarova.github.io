@@ -11,7 +11,8 @@ body{
     padding:0;
     text-align: center;
     position: relative;
-    font-family: 'Open Sans'
+    font-family: 'Open Sans';
+    overflow-x: hidden;
 }
 
 h1, h2{
@@ -36,7 +37,7 @@ h2{
 
  a{
     text-decoration: none;
-    margin-left: 0.8em;
+    margin-right:0.8em;
     font-size:2em;
     color: black;
 }
@@ -334,7 +335,7 @@ footer{
         width:60%;
     }
     #contactMe h2{
-        font-size: 2em;
+        font-size: 3.5em;
     }
     .fa{
         font-size: 5em;
