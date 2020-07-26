@@ -24,14 +24,14 @@ body{
     width:100%;
 }
 
-a{
+ #navbar a{
     text-decoration: none;
     margin: 0.5em;
     font-size:1.8em;
     color: black;
 }
 
-a:hover{
+#navbar a:hover{
     color: rgba(72,117,73, 1);
     font-weight: 600;
     transition: .2s ease;
@@ -96,10 +96,10 @@ svg{
 }
 
 .projects{
-    width: 100%;
+    min-width: 102%;
     background-color:white;
     margin: 5em auto 5em auto;
-    padding-bottom: 3em;
+    padding-bottom: 4em;
     height: auto;
     text-align: start;
     position: relative;
@@ -115,7 +115,7 @@ svg{
     opacity: 0.9;
     width:100%;
     height:100%;
-   clip-path: polygon(100% 90%, 0 100%, 100% 100%);
+   clip-path: polygon(100% 91%, 0 100%, 100% 101%);
 }
 
 #myWork h2{
@@ -136,17 +136,19 @@ svg{
 .project-tile{
     background-color: rgb(194, 194, 194, 0.7);
     opacity: 1;
-    padding:0.3em;
+    padding:0.5em;
     position: relative;
     border-radius: 4%;
-    height: 8em;
+    height: 14em;
+    width: auto;
+    margin: 1em;
 }
 
 .projectImage{
     object-fit: cover;
     width:100%;
     padding-right: 0.5em;
-    height: 6.5em;
+    height: 11.5em;
     display: block;
 }
 
@@ -169,22 +171,43 @@ svg{
 }
 
 .project-title{
-    font-size: 0.8em;
+    font-size: 1.2em;
     padding:0.3em 0 0 0;
     margin:0;
 }
 
 .hiddenText{
     text-align: start;
-    top: 30%;
-    margin-top: -30px;
-    position: absolute;
-    font-size: 0.7em;
+    top: 25%;
+    margin-top: -70px;
+    position: relative;
+    font-size: 0.9em;
     line-height: 1.5em;
     color: black;
     font-weight: 500;
 }
+
+.hiddenText a{
+    width: 40%;
+    height:20%;
+    position: relative;
+    font-weight: 700;
+    color: #db8400;
+    text-align: center;
+    margin: 0.5em;
+    font-size:1.8em;
+}
+
+#aCode{
+    float: left;
+}
+
+#aApp{
+    float: right;
+}
+
 li{
+    font-size: 1.3em;
     margin-left:0.8em;
 }
 .technologies{
