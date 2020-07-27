@@ -183,6 +183,7 @@ svg{
     background-color: rgb(72,117,73);
     display: flex;
     flex-direction: column;
+    text-align: start;
 }
 
 .project-tile:hover .overlay{
@@ -203,7 +204,7 @@ svg{
     line-height: 1.5em;
     color: black;
     font-weight: 500;
-    margin: 5% auto auto auto;
+    margin:5% auto auto auto;
     height:70%;
     align-items: flex-start;
 }
@@ -215,11 +216,14 @@ svg{
     color: #db8400;
     text-align: center;
     text-decoration: underline;
-    align-items: flex-end;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 2%;
 }
 
 #aCode{
     float: left;
+    text-align: end;
 }
 
 #aApp{
@@ -229,7 +233,7 @@ svg{
 li{
     font-size: 1.3em;
     list-style-type: none;
-    padding-top: 0.1em;
+    padding-top: 2%;
 }
 .technologies{
     font-size: 1.4em;
