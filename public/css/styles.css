@@ -288,7 +288,7 @@ li{
 
 #contactMe h2{
     font-size: 2.8em;
-    padding-top: 1.5em;
+    padding-top: 0.5em;
     line-height: 1.5em;
 }
 
@@ -339,7 +339,7 @@ footer{
         width:60%;
     }
     #contactMe h2{
-        font-size: 3.5em;
+        font-size: 3em;
     }
     .fa{
         font-size: 5em;
