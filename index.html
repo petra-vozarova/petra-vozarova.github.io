@@ -6,6 +6,8 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
         <script src='/public/js/app.js'></script>
+        <title>Petra's Portoflio</title>
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
@@ -22,7 +24,7 @@
                 <h1>Welcome To My Portoflio!</h1>
                 <div>
                 <h2><em>My name is Petra.</em></h2>
-                <h2><em>I am a self-taught software engineer.</em></h2>
+                <h2><em>I am a software engineer.</em></h2>
                 </div>
             </div>
         </div>
@@ -30,20 +32,33 @@
             <div id='aboutMe'>
                 <h2>Just a Little Bit About Me</h2>
                 <p>
-                    I am a <strong>junior software developer</strong> with an interest in both back-end and front-end technologies. I taught myself to code through completing numerous online courses and working on coding projects in my spare time. 
+                    I am a <strong>junior software developer
+
+                    </strong> with an interest in both front-end and 
+                     back-end technologies.
                 </p>
                 <p>
-                    I became passionate about computer science while doing a <strong>degree in Psychology</strong> and looking into ways how coding skills could enhance data analysis in research.
-                </p> 
-                <p>
-                    I am actively learning new technologies, and discovering endless opportunities that computing offers. 
+                    As a developer I worked for a 
+                    large finance company in the UK. I 
+                    <strong>developed multiple data processing modules</strong>, 
+                    wrote <strong>unit and integration tests</strong>. 
+                    I prepared hand-overs and code documentations for colleagues.
+                    I created a number of internal <strong>React microsites</strong> & updated UI for internal software.
+
+                    <!-- I taught myself to code through completing numerous online courses and 
+                    working on coding projects in my spare time.  -->
                 </p>
                 <p>
-                    To my current set of skills and technologies belong <strong>Python, Flask, JavaScript, Node.JS, React, jQuery, MongoDB</strong> and much more in the pipeline. 
+                    I love learning new technologies, building side projects, 
+                    solving problems and writing awesome code.
                 </p>
                 <p>
-                    I am at the beginning of the next chapter in my life and I am <strong>looking for new opportunities</strong> to put my skills into action. 
+                    To my current set of skills and technologies belong 
+                    <strong>JavaScript, NodeJS, Python, Perl, React, 
+                        Redux, Flask, APIs, SQL, MongoDB
+                    </strong> & much more in the pipeline. 
                 </p>
+
             </div>
             <div class='projects' id='myWork'>
                 <div >
@@ -53,6 +68,73 @@
                     <h2>Some Of My Projects: </h2>
                     <div class='projectGrid'>
 
+                        
+                        <div class='project-tile'>  
+                          
+                            <img class='projectImage' src='/public/img/otta_nasa_project_snippet.png' alt='Image of Project'>   
+                            </img>
+                            <div class='overlay'>
+                                <div class='hiddenText'>
+                                    
+                                    <ul>
+                                        <li style="list-style-type: none"><strong>React, NodeJS, MongoDB</strong></li>
+                                        <li><em>Rest API in NodeJS</em></li>
+                                        <li><em>CI using GitHub Actions</em></li>
+                                        <li><em>Deployed on AWS using Docker</em></li>
+
+                                    </ul>
+                                    <a id='aCode' class='fa fa-code fa-2x' href='https://github.com/petra-vozarova/nasa_node_web_app' target='_blank'> Code</a>
+                                    <a id ='aApp' class='fa fa-desktop fa-2x' href='http://18.156.42.144:8000/' target='_blank' > App</a>
+
+                                </div>
+                            </div>
+                            <p class='project-title'>Mock Nasa Full Stack App</p>    
+                        </div>
+
+
+                        <div class='project-tile'>  
+                          
+                            <img class='projectImage' src='/public/img/otta_plant_store_snippet.png' alt='Image of Project'>   
+                            </img>
+                            <div class='overlay'>
+                                <div class='hiddenText'>
+                                    
+                                    <ul>
+                                        <li style="list-style-type: none"><strong>React, Redux, Oaut</strong></li>
+                                        <li><em>Mock e-commerce website</em></li>
+                                        <li><em>Uses Firebase for hosting data</em></li>
+                                        <li><em>Deployed on Netlify</em></li>
+
+                                    </ul>
+                                    <a id='aCode' class='fa fa-code fa-2x' href='https://github.com/petra-vozarova/plant_store' target='_blank'> Code</a>
+                                    <a id ='aApp' class='fa fa-desktop fa-2x' href='https://delightful-daifuku-1c68b4.netlify.app/' target='_blank' > App</a>
+
+                                </div>
+                            </div>
+                            <p class='project-title'>React e-commerce website</p>    
+                        </div>
+
+                        <div class='project-tile'>  
+                          
+                            <img class='projectImage' src='/public/img/weather.png' alt='Image of Project'>   
+                            </img>
+                            <div class='overlay'>
+                                <div class='hiddenText'>
+                                    
+                                    <ul>
+                                        <li style="list-style-type: none"><strong>Node.js, Express, Request</strong></li>
+                                        <li><em>Jest & Supertest, Docker</em></li>
+
+                                        <li><em>uses requests and promise chaining to interact with APIs</em></li>
+                                        <li><em>fetches geo coordinates and renders weather information</em></li>
+
+                                    </ul>
+                                    <a id='aCode' class='fa fa-code fa-2x' href='https://github.com/petra-vozarova/weather-forecast' target='_blank'> Code</a>
+                                </div>
+                            </div>
+                            <p class='project-title'>Weather Forecast App</p>    
+                        </div>
+
                         <div class='project-tile'>
                             <img class='projectImage' src='/public/img/word-counter.png' alt='Image of Project'>
                             </img>
@@ -60,14 +142,14 @@
                             <div class='overlay'>
                                 <div  class='hiddenText'>
                                     <ul>
-                                        <li><strong>Python, Flask, JavaScript</strong></li>
-                                        <li><em>combination of React.js and Flask</em></li>
-                                        <li><em>JS front-end & Python back-end</em></li>
+                                        <li style="list-style-type: none"><strong>Python, Flask, React</strong></li>
+                                        <li><em>JS frontend and Flask backend</em></li>
+                                        <li><em>Flask running in Docker</em></li>
                                         <li><em>analysis of textual input</em></li>
                                     </ul>
                               
-                                    <a id='aCode' class='fa fa-code fa-2x' href='https://github.com/petra-vozarova/count-words' target='_blank' > Code</a>
-                                    <a id ='aApp' class='fa fa-desktop fa-2x' href='https://petra-vozarova.github.io/count-words/' target='_blank' > App</a>
+                                    <a id='aCode' class='fa fa-code fa-2x' href='https://github.com/petra-vozarova/count-words' target='_blank' >React</a>
+                                    <a id ='aCode' class='fa fa-code fa-2x' href='https://github.com/petra-vozarova/flask-api' target='_blank' >Flask</a>
                                 </div>
                             </div>
                             <p class='project-title'>Word-Counter</p>
@@ -80,7 +162,7 @@
                             <div class='overlay'>
                                 <div  class='hiddenText'>
                                     <ul>
-                                        <li><strong>JavaScript, React, CSS</strong></li>
+                                        <li style="list-style-type: none"><strong>JavaScript, React, CSS</strong></li>
                                         <li><em>adjustable length of sessions</em></li>
                                         <li><em>uses Date object to map time</em></li>
                                         <li><em>time tracking animations</em></li>
@@ -100,7 +182,7 @@
                                 <div class='hiddenText'>
                     
                                     <ul>
-                                        <li><strong>JavaScript, React, CSS</strong></li>
+                                        <li style="list-style-type: none"><strong>JavaScript, React, CSS</strong></li>
                                         <li><em>dynamically validates input</em></li>
                                         <li><em>animation changes based on results</em></li>
                                     </ul>
@@ -117,7 +199,7 @@
                                 <div class='hiddenText'>
 
                                     <ul>
-                                        <li><strong>JavaScript, CSS, Markdown</strong></li>
+                                        <li style="list-style-type: none"><strong>JavaScript, CSS, Markdown</strong></li>
                                         <li><em>accepts input from user</em></li>
                                         <li><em>dynamically renders any changes to Markdown script</em></li>
                                     </ul>
@@ -135,7 +217,7 @@
                                 <div class='hiddenText'>
 
                                     <ul>
-                                        <li><strong>JavaScript, React, CSS</strong></li>
+                                        <li style="list-style-type: none"><strong>JavaScript, React, CSS</strong></li>
                                         <li><em>plays audio clips</em></li>
                                         <li><em>includes keyboard interactions</em></li>
                                         <li><em>randomly assigns design on reload</em></li>
@@ -155,7 +237,7 @@
                                 <div class='hiddenText'>
                                     
                                     <ul>
-                                        <li><strong>JavaScript, jQuery, CSS</strong></li>
+                                        <li style="list-style-type: none"><strong>JavaScript, jQuery, CSS</strong></li>
                                         <li><em>upon request randomly fetches quotes</em></li>
                                         <li><em>each quotes is displayed with new background</em></li>
                                         <li><em>includes a button to retweet</em></li>
@@ -167,25 +249,6 @@
                             <p class='project-title'>Random Quotes</p>
                         </div>
 
-                        <div class='project-tile'>  
-                          
-                            <img class='projectImage' src='/public/img/weather.png' alt='Image of Project'>   
-                            </img>
-                            <div class='overlay'>
-                                <div class='hiddenText'>
-                                    
-                                    <ul>
-                                        <li><strong>Node.js, Express, Request</strong></li>
-                                        <li><em>uses requests and promise chaining to interact with APIs</em></li>
-                                        <li><em>fetches geo coordinates and renders weather information</em></li>
-                                    </ul>
-                                    <a id='aCode' class='fa fa-code fa-2x' href='https://github.com/petra-vozarova/weather-forecast' target='_blank'> Code</a>
-                                    <a id ='aApp' class='fa fa-desktop fa-2x' href='https://vozarova-weather-forecast-app.herokuapp.com/' target='_blank'> App</a>
-                                </div>
-                            </div>
-                            <p class='project-title'>Weather Forecast App</p>    
-                        </div>
-
                     </div class='svg'>
                            
                 </div>
@@ -193,48 +256,57 @@
             <div class='technologies'>
                 <h2>Overview Of My Skills</h2>
                 <div class='technologiesGird'>
+                    
                     <div class='techImage'>
                         <img  src='/public/img/JavaScript.png' alt='JavaScript logo'/>
                     </div>
+
                     <div class='techImage'>
-                        <img  src='/public/img/html5.png' alt='HTML logo'/>
+                        <img  src='/public/img/python.jpg' alt='python logo'/>
                     </div>
-                    <div class='techImage'>
-                        <img  src='/public/img/css.png' alt='CSS logo'/>
+
+                    <div class='techImage'id='perl'>
+                        <img  src='/public/img/perl.png' alt='perl logo'/>
                     </div>
-                    <div class='techImage'>
-                        <img  src='/public/img/Node.js' alt='Node.js logo'/>
-                    </div>
-                    <div class='techImage'>
-                        <img  src='/public/img/mongoDB.jpg' alt='mongoDB logo'/>
-                    </div>
+
                     <div class='techImage'>
                         <img  src='/public/img/React.png' alt='react logo'/>
                     </div>
+
                     <div class='techImage'>
                         <img  src='/public/img/redux.png' alt='Redux logo'/>
                     </div>
+
+                    <div class='techImage'>
+                        <img  src='/public/img/Node.js' alt='Node.js logo'/>
+                    </div>
+
+                    <div class='techImage'>
+                        <img  src='/public/img/html5.png' alt='HTML logo'/>
+                    </div>
+
+                    <div class='techImage'>
+                        <img  src='/public/img/css.png' alt='CSS logo'/>
+                    </div>
+
+                    <div class='techImage'>
+                        <img  src='/public/img/mongoDB.jpg' alt='mongoDB logo'/>
+                    </div>
+
                     <div class='techImage'>
                         <img  src='/public/img/jQuery.png' alt='jQuery logo'/>
                     </div>
                     <div class='techImage'>
                         <img  src='/public/img/bootstrap.jpg' alt='bootstrap logo'/>
                     </div>
-                    <div class='techImage'>
-                        <img  src='/public/img/python.jpg' alt='python logo'/>
-                    </div>
+
                     <div class='techImage'>
                         <img  src='/public/img/Numpy.png' alt='numpy logo'/>
                     </div>
                     <div class='techImage'>
                         <img  src='/public/img/pandas.png' alt='pandas logo'/>
                     </div>
-                    <div class='techImage'>
-                        <img  src='/public/img/matplotlib.png' alt='matplotlib logo'/>
-                    </div>
-                    <div class='techImage'>
-                        <img  src='/public/img/scikit-learn.jpg' alt='scikit-learn logo'/>
-                    </div>
+
                     
                     
                 </div>
@@ -242,7 +314,7 @@
             <div id='contactMe'>
                 <h2><em>Am I someone you would like to work with?<br> Interested to find out more?</em></h2>
                 <h2  style="color: #111; text-decoration: underline">Let's build something great<br> together!</h2>
-                <a href='https://uk.linkedin.com/in/petra-vozarova-253269158' target='_blank' class='fa fa-linkedin fa-4x'>
+                <a href='https://www.linkedin.com/in/petrarossa/' target='_blank' class='fa fa-linkedin fa-4x'>
                 </a>
                 <a id='profile-link' href='https://github.com/petra-vozarova' target='_blank' class='fa fa-git fa-4x'>
                 </a>
@@ -250,7 +322,7 @@
             </div>
         </div>
         <footer>
-            <p><em>2022 </em> | Petra Vozarova</p>
+            <p><em>2023 // created by Petra Rossa</em> </p>
         </footer>
     </body>
 </html>

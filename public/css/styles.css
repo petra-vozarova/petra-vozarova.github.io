@@ -232,8 +232,11 @@ svg{
 
 li{
     font-size: 1.3em;
-    list-style-type: none;
+    /* list-style-type: none; */
     padding-top: 2%;
+}
+li .title{
+    list-style-type: none;
 }
 .technologies{
     font-size: 1.4em;
@@ -259,6 +262,7 @@ li{
     border-radius: 4%;
     height: 6.5em;
     text-align: center;
+
 }
 
 .techImage img{
@@ -269,6 +273,15 @@ li{
     height: 85%;
     padding: 0.3em;
     background-color: transparent;
+}
+
+#perl{
+    height: 68%;
+    background-color: white;
+    padding: 0.3em;
+    margin-left: 0.5em;
+    margin-top: 1.1em;
+    border-radius: 4%;
 }
 
 #contactMe{
